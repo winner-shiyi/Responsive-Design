@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BFC图文混排——头尾不动中间变</title>
+	<link rel="stylesheet" href="../dist/style/demo2/index.css">
+</head>
+<body>
+	<div class="item">
+		<div class="item-head">我不变</div>
+		<div class="item-tail">我也不变</div><!--我是尾，但是我放在身子的前面-->
+		<div class="item-cont">拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！拖动窗口看我72变！</div>
+	</div>
+	<div>
+		<h3>tips:</h3>
+		1,重点在html结构上，最后一个浮动在右边的div,它的html要在中间的div的前面<br>
+		2,item-head 和 item-tail 尝试删掉width看看效果.(这两个的宽度会由里面的内容撑开，宽度由内容来决定)
+	</div>
+</body>
+</html>

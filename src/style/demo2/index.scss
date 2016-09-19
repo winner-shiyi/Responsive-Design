@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import "../common";
+
+.item{
+	padding:10px;
+	.item-head,.item-tail{
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.item-head{
+		float:left;
+		width:60px;
+		background:orange;
+	}
+	.item-tail{
+		float: right;
+		width:100px;
+		background: blue;
+	}
+	.item-cont{
+		overflow: hidden;
+		height: 50px;line-height: 50px;
+		background: green;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+	}
+}

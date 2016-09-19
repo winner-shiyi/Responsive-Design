@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BFC图文混排——头不动身子变</title>
+	<link rel="stylesheet" href="../dist/style/demo1/index.css">
+</head>
+<body>
+	<div class="item item-my">
+		<div class="pic">
+			<img src="http://img0.bdstatic.com/img/image/shouye/sjsh-9626448682.jpg" alt="">
+		</div>
+		<p class="txt">花开花落， 我都不忍错过， 浪起浪伏， 并非全部生活。 要是岁月蹉跎， 那就认真把握， 不是忙忙碌碌， 才能有所收获。 别说如果， 要珍惜允诺， 既然爱过， 就别怕寂寞。 诚如你所说， 人应该活得洒脱， 那么，就爱这世界， 爱这花—开—花—落。</p>
+	</div>
+	<div class="item item-you">
+		<div class="pic">
+			<img src="http://img0.bdstatic.com/img/image/shouye/qcmt-9567004004.jpg" alt="">
+		</div>
+		<p class="txt">夏花烂漫， 人情料峭， 惜香漫语频频道。 真言却惹庸人恼， 苟谈逍遥。 一枕相思， 梦也无逃， 冷月无声徒寂寥。 青丝空换白首老， 生得悄悄。</p>
+	</div>
+	<div>
+		<h3>tips:</h3>
+		1,因为里面子元素图片没有圆角，如果不加overflow:hidden；则会图片的直角露出来<br/>
+		2,加气泡尖角，注：因.pic和.txt都有overflow:hidden样式，所以加到.item上<br/>
+		3,头像旁边的小三角有个小bug，当文字框足够宽时会出现，应该想个办法为文字框设置一个最小高度
+	</div>
+</body>
+</html>

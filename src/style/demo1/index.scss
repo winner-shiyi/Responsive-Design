@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@import "../common";
+
+.item{
+	padding:15px;
+	position: relative;
+	.pic{
+		overflow: hidden;
+		//因为里面子元素图片没有圆角，如果不加overflow:hidden；则会图片的直角露出来
+		width:60px;
+		height:60px;
+		border-radius: 5px;
+		box-shadow: 0 0 3px rgba(0,0,0,.5);
+		img{
+			display: block;
+			width:100%;
+		}
+	}
+	.txt{
+		padding:10px;
+		box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+		border-radius: 5px;
+		word-wrap:break-word;
+		word-break:normal;
+		overflow: hidden;//触发BFC
+	}
+}
+.item-my{
+	.pic{
+		float:left;
+		margin-right: 15px;
+	}
+	.txt{
+		background: #ddd;
+	}
+}
+.item-you{
+	.pic{
+		float: right;
+		margin-left: 15px;
+	}
+	.txt{
+		background:#73bb49;
+	}
+}
+/* 加气泡尖角，注：因.pic和.txt都有overflow:hidden样式，所以加到.item上 */
+.item::before,.item::after{//不能使用txt作为父元素，因为定位后超出去会被overflow隐藏
+	content: "";
+	position: absolute;
+	border:solid transparent;
+	border-width:8px 10px;
+}
+.item-my::before{
+	top:35px;
+	left:70px;
+	border-right-color:#ddd;
+}
+.item-you::after{
+	top:35px;
+	right:70px;
+	border-left-color:#73bb49;
+}
+
