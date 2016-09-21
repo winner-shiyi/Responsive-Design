@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "../common";
+
+html,body{height: 100%;}
+
+.w-main{
+	margin:30px auto;
+	background: #ddd;
+	overflow: hidden;
+	.list{
+		margin:0 -5px;
+	}
+	.c2{
+		width:50%;
+		float: left;
+	}
+	.c3{
+		width:33.333%;
+		float: left;
+	}
+	.c4{
+		width:25%;
+		float: left;
+	}
+	.c-inner{
+		margin:5px;
+	}
+	.c-inner img{
+		width:100%;
+		vertical-align: middle;
+	}
+}

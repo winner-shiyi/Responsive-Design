@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import "../common";
+
+html,body{height: 100%;}
+
+.w-main{
+	max-width: 1000px;
+	margin:0 auto;
+	header{
+		width:100%;
+		height: 100px;
+		background: #b61b17;
+	}
+	section{
+		margin-top:2%;
+		overflow: hidden;
+	}
+	aside{
+		float:left;
+		width:28%;
+		height: 500px;
+		background: #317f97;
+	}
+	article{
+		float: left;
+		width:40%;
+		height: 500px;
+		margin:0 2%;
+		background: #73aa47;
+	}
+	footer{
+		width:100%;
+		height: 100px;
+		margin-top:2%;
+		background: #e99528;
+	}
+}
