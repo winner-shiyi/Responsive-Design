@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* rest */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form,li{margin:0;}
+input{padding:0;}
+ul,ol{list-style: none;margin:0; padding:0;}
+img{border:0;-ms-interpolation-mode: bicubic; }
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	color:#000;
+	background:#fff;
+}
+
+body {
+    height: 100%;
+    font-size: 100%;
+}
+.wrapper{
+	max-width:1000px;
+	margin:0 auto;
+}
+
+/* 比如右侧宽300；我就可以左侧margin-right:320px;
+这边表格居多，其实只要这样就好：
+table{
+width:100%;
+table-layout:fixed;
+}
+ */
