@@ -1,12 +1,12 @@
 @charset "utf-8";
 
-/* rest */
+/* reset */
 body, dl, dd, h1, h2, h3, h4, h5, h6, p, form,li,img{margin:0;}
 input,img{padding:0;}
 ul,ol{list-style: none;margin:0; padding:0;}
 img{border:0;-ms-interpolation-mode: bicubic; }
 html {
-	font-size: 14px;
+	font-size: 20px;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	color:#000;
@@ -15,12 +15,11 @@ html {
 
 body {
     height: 100%;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "Microsoft Yahei,Arial,Helvetica";
 }
 .wrapper{
 	max-width:640px;
-	height: 2781px;
 	margin:0 auto;
 	img{
 		display: block;
@@ -34,25 +33,33 @@ body {
 }
 .container{
 	.rule-box{
+		position: relative;
 		width:100%;
-		height: 323px;//???
 		background: url("../../image/demo6/au-bg5.jpg") no-repeat 50% 50%;
+		background-size: cover;
 		overflow: hidden; 
 		.rule{
 			position: relative;
 			left:3.125%;
 			width:70.15625%;
 			margin-right:29.6875%;
+			padding-bottom: 3%;
 			color: #fed406;
-			font-size:.5rem;
-			font-family: "Microsoft Yahei";
+			font-size:.6rem;
+		}
+		h3{
+			margin-bottom:10px;
+		}
+		p{
+			line-height: 0.75rem;
 		}
 	}
 
 	.gift{
 		float: right;
-		width:20.3125%;
+		width:4.25rem;
 	}
+
 }
 table{
 	width:100%;
@@ -60,38 +67,50 @@ table{
 	text-align: center;
 	color:#fed406;
 	th{
-		font-size: .4rem;
+		height: 1.5rem;
+		font-size: .6rem;
 		font-weight: normal;
 		background:#120c35;
 		border-top:1px solid #201754;
 		border-right:1px solid #201754;
 	}
 	.rank{
-		width:17.03%;
+		width:15.03%;
 	}
 	.name{
 		width:33.12%;
 	}
 	.num{
-		width:25.31%;
+		width:30.31%;
 	}
 	.reward{
 		width:24.37%;
 	}
 	td{
-		font-size: .3rem;
+		height: 1.5rem;
+		font-size: .6rem;
 		background:#171041;
 		border-top:1px solid #201754;
 		border-right:1px solid #201754;
 	}
+	.s-name{
+		display: block;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
 }
 .footer{
 	position: relative;
+	img{
+		height: 100%;
+	}
 	.list{
 		position: absolute;
 		top:5%;
 		left:18.88%;
-		font-size: .2rem;
+		font-size: .35rem;
+		color:#fff;
 		li{
 			float: left;
 			width:45.8125%;
@@ -100,10 +119,4 @@ table{
 
 }
 
-/* 比如右侧宽300；我就可以左侧margin-right:320px;
-这边表格居多，其实只要这样就好：
-table{
-width:100%;
-table-layout:fixed;
-}
- */
+
